@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/buttonShare"
-        android:layout_width="169dp"
+        android:layout_width="194dp"
         android:layout_height="68dp"
         android:backgroundTint="#009688"
         android:text="Share"
@@ -123,7 +123,7 @@
 
     <Button
         android:id="@+id/buttonEqual"
-        android:layout_width="169dp"
+        android:layout_width="194dp"
         android:layout_height="68dp"
         android:backgroundTint="#009688"
         android:text="="
@@ -153,15 +153,18 @@
         android:id="@+id/buttonMult"
         android:layout_width="70dp"
         android:layout_height="68dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#3F51B5"
         android:text="x"
         android:textSize="24sp"
         app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEqual"
         app:layout_constraintEnd_toStartOf="@+id/divider"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonRes"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonShare"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonFour"
@@ -265,8 +268,6 @@
         android:id="@+id/textView"
         android:layout_width="351dp"
         android:layout_height="91dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
@@ -282,8 +283,10 @@
         android:layout_width="1dp"
         android:layout_height="409dp"
         android:background="?android:attr/listDivider"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="-14dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
