@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         button1.setOnClickListener {
-            contador = contador+1
+            contador += 1
             text.text= (contador).toString()
         }
 

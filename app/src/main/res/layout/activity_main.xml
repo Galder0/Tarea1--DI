@@ -267,8 +267,6 @@
         android:id="@+id/textView"
         android:layout_width="361dp"
         android:layout_height="84dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="31dp"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
